@@ -1,0 +1,193 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poiret One', cursive;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background-color: #000;
+    min-height: 200vh;
+}
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: #008080;
+    }
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 10px 100px;
+    z-index: 50;
+    background: rgba(0, 0, 0, 0.93);
+}
+header.sticky {
+    padding: 4px 100px;
+    background: #fff;
+}
+header .logo {
+    position: relative;
+    transition: 0.6s;
+    top: 2px;
+    left: 50px;
+}
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li {
+    position: relative;
+    list-style: none;
+}
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    padding: 20px;
+    text-decoration: none;
+    color : #008080;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+}
+header ul li a:hover{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.6fr 1.4fr;
+    gap: 0px 0px;
+    grid-column-gap: 25px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "headbean headbean headbean"
+    "bean1 bean2 bean3";
+}
+
+.headbean { 
+    grid-area: headbean; 
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 50px;
+    color: #fff;
+
+}
+
+.bean1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "picbean1 picbean1 picbean1"
+    "picbean1 picbean1 picbean1"
+    "costbean1 costbean1 costbean1";
+    grid-area: bean1;
+}
+
+.picbean1 { grid-area: picbean1; }
+
+.costbean1 { grid-area: costbean1; }
+
+.bean2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "picbean2 picbean2 picbean2"
+    "picbean2 picbean2 picbean2"
+    "costbean2 costbean2 costbean2";
+    grid-area: bean2;
+}
+
+.picbean2 { grid-area: picbean2; }
+
+.costbean2 { grid-area: costbean2; }
+
+.bean3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "picbean3 picbean3 picbean3"
+    "picbean3 picbean3 picbean3"
+    "costbean3 costbean3 costbean3";
+    grid-area: bean3;
+}
+
+.picbean3 { grid-area: picbean3; }
+
+.costbean3 { grid-area: costbean3; }
+
+.picbean1 img {
+    width: 100%;
+    height: auto;
+}
+
+.picbean2 img {
+    width: 100%;
+    height: auto;
+}
+
+.picbean3 img {
+    width: 100%;
+    height: auto;
+}
+.costbean1 {
+    color: #fff;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+}
+.costbean2 {
+    color: #fff;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+}
+.costbean3 {
+    color: #fff;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+}
+.picbean1 img:hover {
+    box-shadow: 0 0 4px 2px rgba(179, 164, 79, 0.9);
+    cursor: pointer;
+    content: url('https://cdn.shopify.com/s/files/1/0471/6177/0152/products/IMG_0822_900x.jpg?v=1606559216');
+    animation-duration: 2s;
+}
+.picbean2 img:hover {
+    box-shadow: 0 0 4px 2px rgba(179, 164, 79, 0.9);
+    cursor: pointer;
+    content: url('https://cdn.shopify.com/s/files/1/0471/6177/0152/products/IMG_0833_900x.jpg?v=1610634545')
+}
+.picbean3 img:hover {
+    box-shadow: 0 0 4px 2px rgba(179, 164, 79, 0.9);
+    cursor: pointer;
+    content: url('https://cdn.shopify.com/s/files/1/0471/6177/0152/products/IMG_0853_900x.jpg?v=1610635023')
+}
+#video h2 {
+    color: #fff;
+    padding: 20px
+}
+#form {
+    display: block;
+    background-color: rgba(179, 164, 79, 0.9);
+    padding: 20px
+}
